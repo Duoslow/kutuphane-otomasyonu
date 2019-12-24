@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+BENIM CSS
+*/
+
+body {
+  max-width: 70%;
+  margin: auto;
+  background-color: #333;
+}
+
+.navbar-nav {
+  background-color: #1d1d1d;
+	z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.navbar-nav > nav {
+  width: 70%;
+  margin: auto;
+}
+
+.nav-bar > li {
+    float: left;
+}
+
+.nav-bar > li > a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif
+}
+
+
+.sag-nav {
+  float: right!important;
+}
+
+.sag-nav > form > input {
+  font-family: "Montserrat";
+  border-radius: 3px;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+}
+.sag-nav > form > input:last-child {
+  margin-left: 0;
+}
+
+.icerik {
+  margin: 3vw auto;
+  padding: 2vw;
+  background-color: #464646;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.content{
+	margin: center;
+  padding: 0vw;
+  margin-top: 0vw;
+  background-color: #464646;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+
+}
+content > form{
+	align="center"
+}
+.kutuphane {
+  display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.kitap-icerik {
+  overflow: hidden;
+  float: left;
+  margin: 10px;
+  background-color: #656565;
+}
+
+.kitap-icerik > a:hover > div {
+  filter: blur(5px);
+}
+
+.kitap-icerik > div:last-child {
+  padding: 10px;
+}
+
+.kitap-icerik > div > span:first-child {
+  font-weight: 900;
+  margin-bottom: 0.5vw;
+}
+
+.kitap-icerik > div > span:first-child > a {
+  text-decoration: none;
+  color: #fff;
+  transition-duration: 0.15s;
+}
+
+.kitap-icerik > div > span:first-child > a:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
+
+.kitap-icerik > div > span {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+.kitap-icerik > div > span > span {
+  font-weight: 400;
+}
+
+.arka {
+  background-size: cover!important;
+  background-position: center!important;
+  height: 330px;
+  transition-duration: 0.15s;
+}
+
+.kul-kutuphane {
+	width: 50%;
+	float: left;
+	grid-template-columns: 1fr!important;
+	margin-top: 2vw;
+}
+
+.kul-baslik {
+	grid-template-columns: 1fr 1fr!important;
+}
+
+.kul-ana {
+	display: inline-block;
+  width: 100%;
+}
+
+.kuldetay {
+	border-radius: 5px;
+	font-family: "Montserrat", sans-serif;
+	margin: 10px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	background-color: #5d5d5d;
+}
+
+.kuldetay > div {
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+	border-bottom: 1px solid #7d7d7d;
+}
+
+.kuldetay > div:last-child {
+	border: none;
+}
+
+.kuldetay > div > span {
+	padding: 10px;
+}
+
+.kuldetay > div > span:first-child {
+	font-weight: 900;
+	text-transform: uppercase;
+	border-right: 1px solid #7d7d7d;
+}
